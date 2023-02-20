@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+  <ul>
+    <li>육상 동물
+      <ul>
+        <li>포유류
+          <ul>
+            <li>소</li>
+            <li>당나귀</li>
+            <li>개</li>
+            <li>호랑이</li>
+          </ul>
+        </li>
+        <li>비 포유류
+          <ul>
+            <li>뱀</li>
+            <li>새</li>
+            <li>도마뱀</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>수생 동물
+      <ul>
+        <li>담수 동물
+          <ul>
+            <li>붕어</li>
+            <li>메기</li>
+          </ul>
+        </li>
+        <li>해양 동물
+          <ul>
+            <li>해마</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    for (let li of document.querySelectorAll('li')) {
+      // 텍스트 노드를 사용해 원하는 글자를 얻습니다.
+      let title = li.firstChild.data;
+
+      title = title.trim(); // 텍스트 끝에 있는 공백을 지웁니다.
+
+      // 후손 노드의 갯수를 얻습니다.
+      let count = li.getElementsByTagName('li').length;
+
+      alert(title + ': ' + count);
+    }
+  </script>
+
+</body>
+</html>
