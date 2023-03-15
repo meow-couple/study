@@ -1,0 +1,24 @@
+.code-box .code-box-demo {
+    background-color: #ffffff;
+    border-radius: 6px 6px 0 0;
+}
+
+.code-box-demo {
+    padding: 42px 24px 50px;
+    color: rgba(0, 0, 0, 0.88);
+    border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+}
+
+:where(.css-1me4733).ant-transfer {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+}
